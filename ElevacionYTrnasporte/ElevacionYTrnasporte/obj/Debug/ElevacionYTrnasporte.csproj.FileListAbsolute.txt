@@ -1,0 +1,9 @@
+c:\users\juan\documents\visual studio 2013\Projects\ElevacionYTrnasporte\ElevacionYTrnasporte\bin\Debug\ElevacionYTrnasporte.exe.config
+c:\users\juan\documents\visual studio 2013\Projects\ElevacionYTrnasporte\ElevacionYTrnasporte\bin\Debug\ElevacionYTrnasporte.exe
+c:\users\juan\documents\visual studio 2013\Projects\ElevacionYTrnasporte\ElevacionYTrnasporte\bin\Debug\ElevacionYTrnasporte.pdb
+c:\users\juan\documents\visual studio 2013\Projects\ElevacionYTrnasporte\ElevacionYTrnasporte\obj\Debug\ElevacionYTrnasporte.csprojResolveAssemblyReference.cache
+c:\users\juan\documents\visual studio 2013\Projects\ElevacionYTrnasporte\ElevacionYTrnasporte\obj\Debug\ElevacionYTrnasporte.Form1.resources
+c:\users\juan\documents\visual studio 2013\Projects\ElevacionYTrnasporte\ElevacionYTrnasporte\obj\Debug\ElevacionYTrnasporte.Properties.Resources.resources
+c:\users\juan\documents\visual studio 2013\Projects\ElevacionYTrnasporte\ElevacionYTrnasporte\obj\Debug\ElevacionYTrnasporte.csproj.GenerateResource.Cache
+c:\users\juan\documents\visual studio 2013\Projects\ElevacionYTrnasporte\ElevacionYTrnasporte\obj\Debug\ElevacionYTrnasporte.exe
+c:\users\juan\documents\visual studio 2013\Projects\ElevacionYTrnasporte\ElevacionYTrnasporte\obj\Debug\ElevacionYTrnasporte.pdb
