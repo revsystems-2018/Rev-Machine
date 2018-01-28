@@ -7,3 +7,6 @@ c:\users\juan\documents\visual studio 2013\Projects\ElevacionYTrnasporte\Elevaci
 c:\users\juan\documents\visual studio 2013\Projects\ElevacionYTrnasporte\ElevacionYTrnasporte\obj\Debug\ElevacionYTrnasporte.csproj.GenerateResource.Cache
 c:\users\juan\documents\visual studio 2013\Projects\ElevacionYTrnasporte\ElevacionYTrnasporte\obj\Debug\ElevacionYTrnasporte.exe
 c:\users\juan\documents\visual studio 2013\Projects\ElevacionYTrnasporte\ElevacionYTrnasporte\obj\Debug\ElevacionYTrnasporte.pdb
+C:\Users\Juan\Desktop\Rev-Machine-master\ElevacionYTrnasporte\ElevacionYTrnasporte\bin\Debug\ElevacionYTrnasporte.exe.config
+C:\Users\Juan\Desktop\Rev-Machine-master\ElevacionYTrnasporte\ElevacionYTrnasporte\obj\Debug\ElevacionYTrnasporte.exe
+C:\Users\Juan\Desktop\Rev-Machine-master\ElevacionYTrnasporte\ElevacionYTrnasporte\obj\Debug\ElevacionYTrnasporte.pdb

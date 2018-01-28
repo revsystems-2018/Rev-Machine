@@ -40,17 +40,19 @@
             // 
             this.button1.BackColor = System.Drawing.Color.Aquamarine;
             this.button1.BackgroundImage = global::ElevacionYTrnasporte.Properties.Resources.fergacom_transportador_modular_de_banda_de_tapiz_cinta_transportadora_con_cajas_954735_FGR;
-            this.button1.Location = new System.Drawing.Point(63, 71);
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button1.Cursor = System.Windows.Forms.Cursors.Default;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Location = new System.Drawing.Point(63, 53);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(280, 141);
+            this.button1.Size = new System.Drawing.Size(188, 107);
             this.button1.TabIndex = 0;
-            this.button1.Text = "Cinta Transportadora";
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(63, 370);
+            this.button2.Location = new System.Drawing.Point(63, 327);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(200, 71);
             this.button2.TabIndex = 1;
@@ -59,7 +61,7 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(428, 224);
+            this.button3.Location = new System.Drawing.Point(304, 183);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(176, 79);
             this.button3.TabIndex = 2;
@@ -68,7 +70,7 @@
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(711, 71);
+            this.button4.Location = new System.Drawing.Point(545, 53);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(179, 72);
             this.button4.TabIndex = 3;
@@ -77,7 +79,7 @@
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(711, 370);
+            this.button5.Location = new System.Drawing.Point(545, 327);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(179, 71);
             this.button5.TabIndex = 4;
@@ -90,7 +92,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BackgroundImage = global::ElevacionYTrnasporte.Properties.Resources.untitled;
-            this.ClientSize = new System.Drawing.Size(923, 530);
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.ClientSize = new System.Drawing.Size(761, 431);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
