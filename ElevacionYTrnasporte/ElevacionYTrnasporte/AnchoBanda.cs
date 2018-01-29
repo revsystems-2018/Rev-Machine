@@ -20,6 +20,13 @@ namespace ElevacionYTrnasporte
         public double diametro;
         public double velocidad;
 
+        public double Qb = 9.9;
+        public double cargaStatic;
+        public Int32 capacidad;
+
+        public int tamañoMin = 1;
+        public double factorChoque;
+
         public AnchoBanda()
         {
             InitializeComponent();
@@ -33,6 +40,174 @@ namespace ElevacionYTrnasporte
         private void AnchoBanda_Load(object sender, EventArgs e)
         {
             resultadoTxt.Text = result.ToString();
+        }
+
+        public double getFactorChoque(double value) {
+            double res = 0;
+            if (value >= 0.1 && value <=2){
+                if(tamañoMin == 1){
+                    res = 1;
+                }
+                else if(tamañoMin == 2){
+                    res = 1.02;
+                }
+                else if (tamañoMin == 3){
+                    res = 1.04;
+                }
+                else if (tamañoMin == 4){
+                    res = 1.06;
+                }
+                else{
+                    res = 1.20;
+                }
+            }
+            if (value > 2 && value <= 2.5)
+            {
+                if (tamañoMin == 1)
+                {
+                    res = 1;
+                }
+                else if (tamañoMin == 2)
+                {
+                    res = 1.03;
+                }
+                else if (tamañoMin == 3)
+                {
+                    res = 1.06;
+                }
+                else if (tamañoMin == 4)
+                {
+                    res = 1.09;
+                }
+                else
+                {
+                    res = 1.32;
+                }
+            }
+            if (value > 2.5 && value <= 3)
+            {
+                if (tamañoMin == 1)
+                {
+                    res = 1;
+                }
+                else if (tamañoMin == 2)
+                {
+                    res = 1.05;
+                }
+                else if (tamañoMin == 3)
+                {
+                    res = 1.09;
+                }
+                else if (tamañoMin == 4)
+                {
+                    res = 1.12;
+                }
+                else
+                {
+                    res = 1.50;
+                }
+            }
+            if (value > 3 && value <= 3.5)
+            {
+                if (tamañoMin == 1)
+                {
+                    res = 1;
+                }
+                else if (tamañoMin == 2)
+                {
+                    res = 1.07;
+                }
+                else if (tamañoMin == 3)
+                {
+                    res = 1.12;
+                }
+                else if (tamañoMin == 4)
+                {
+                    res = 1.16;
+                }
+                else
+                {
+                    res = 1.70;
+                }
+            }
+            if (value > 3.5 && value <= 4)
+            {
+                if (tamañoMin == 1)
+                {
+                    res = 1;
+                }
+                else if (tamañoMin == 2)
+                {
+                    res = 1.09;
+                }
+                else if (tamañoMin == 3)
+                {
+                    res = 1.16;
+                }
+                else if (tamañoMin == 4)
+                {
+                    res = 1.21;
+                }
+                else
+                {
+                    res = 1.90;
+                }
+            }
+            if (value > 4 && value <= 5)
+            {
+                if (tamañoMin == 1)
+                {
+                    res = 1;
+                }
+                else if (tamañoMin == 2)
+                {
+                    res = 1.13;
+                }
+                else if (tamañoMin == 3)
+                {
+                    res = 1.24;
+                }
+                else if (tamañoMin == 4)
+                {
+                    res = 1.35;
+                }
+                else
+                {
+                    res = 2.30;
+                }
+            }
+            if (value > 5 && value <= 6)
+            {
+                if (tamañoMin == 1)
+                {
+                    res = 1;
+                }
+                else if (tamañoMin == 2)
+                {
+                    res = 1.18;
+                }
+                else if (tamañoMin == 3)
+                {
+                    res = 1.33;
+                }
+                else if (tamañoMin == 4)
+                {
+                    res = 1.50;
+                }
+                else
+                {
+                    res = 2.80;
+                }
+            }
+            return res;
+        }
+
+        private double getCargaEstatica(double Ao) {
+            double res = 0;
+            double abajo = 3.6 * velocidad;
+            double dividir = ((capacidad / abajo) + Qb);
+            res = (Ao * (dividir * 0.981));
+            return res;
         }
 
         public int getDiametro(double ancho, double velocidad) {
@@ -142,7 +317,9 @@ namespace ElevacionYTrnasporte
              }
             ancho = Convert.ToInt32(anchobandabox.SelectedItem.ToString());
             diametro = getDiametro(ancho, velocidad);
-            pasoTxt.Text = paso.ToString() +" "+ retorno +" "+ ancho.ToString() +" "+diametro;
+            cargaStatic = Math.Round(getCargaEstatica(paso), 2);
+            factorChoque = getFactorChoque(velocidad);
+            pasoTxt.Text = paso.ToString() +" "+ retorno +" "+ ancho.ToString() +" "+diametro +" "+cargaStatic;
         }
 
     }

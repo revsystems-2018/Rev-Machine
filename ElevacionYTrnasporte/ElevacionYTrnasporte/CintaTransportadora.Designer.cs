@@ -28,13 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.capacidadTxt = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
@@ -49,7 +48,7 @@
             this.IMtxt = new System.Windows.Forms.TextBox();
             this.label15 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.condicionTxt = new System.Windows.Forms.ComboBox();
             this.alimentacionBox = new System.Windows.Forms.ComboBox();
             this.button1 = new System.Windows.Forms.Button();
             this.Tamañomin = new System.Windows.Forms.ComboBox();
@@ -61,14 +60,17 @@
             this.resultTxt = new System.Windows.Forms.TextBox();
             this.angureposo = new System.Windows.Forms.ComboBox();
             this.pesobox = new System.Windows.Forms.ComboBox();
+            this.utilizacionTxt = new System.Windows.Forms.ComboBox();
+            this.utiltxt = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // textBox1
+            // capacidadTxt
             // 
-            this.textBox1.Location = new System.Drawing.Point(198, 32);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(153, 20);
-            this.textBox1.TabIndex = 0;
+            this.capacidadTxt.Location = new System.Drawing.Point(198, 32);
+            this.capacidadTxt.Name = "capacidadTxt";
+            this.capacidadTxt.Size = new System.Drawing.Size(153, 20);
+            this.capacidadTxt.TabIndex = 0;
+            this.capacidadTxt.Text = "1000";
             // 
             // label1
             // 
@@ -110,13 +112,6 @@
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(153, 20);
             this.textBox4.TabIndex = 5;
-            // 
-            // textBox8
-            // 
-            this.textBox8.Location = new System.Drawing.Point(621, 197);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(153, 20);
-            this.textBox8.TabIndex = 9;
             // 
             // label3
             // 
@@ -237,6 +232,7 @@
             this.IMtxt.Name = "IMtxt";
             this.IMtxt.Size = new System.Drawing.Size(153, 20);
             this.IMtxt.TabIndex = 27;
+            this.IMtxt.Text = "833";
             // 
             // label15
             // 
@@ -258,13 +254,18 @@
             this.label16.TabIndex = 29;
             this.label16.Text = "tipo de alimentacion";
             // 
-            // comboBox1
+            // condicionTxt
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(621, 118);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(195, 21);
-            this.comboBox1.TabIndex = 31;
+            this.condicionTxt.FormattingEnabled = true;
+            this.condicionTxt.Items.AddRange(new object[] {
+            "Limpio y con mantenimiento regular.",
+            "Con presencia de material abrasivo o muy corrosivo.",
+            "Con presencia de material muy abrasivo o corrosivo."});
+            this.condicionTxt.Location = new System.Drawing.Point(621, 118);
+            this.condicionTxt.Name = "condicionTxt";
+            this.condicionTxt.Size = new System.Drawing.Size(195, 21);
+            this.condicionTxt.TabIndex = 31;
+            this.condicionTxt.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // alimentacionBox
             // 
@@ -422,12 +423,37 @@
             this.pesobox.TabIndex = 44;
             this.pesobox.SelectedIndexChanged += new System.EventHandler(this.pesobox_SelectedIndexChanged);
             // 
+            // utilizacionTxt
+            // 
+            this.utilizacionTxt.FormattingEnabled = true;
+            this.utilizacionTxt.Items.AddRange(new object[] {
+            "Menos de 6 horas al día.",
+            "De 6 a 9 horas al día.",
+            "De 10 a 16 horas al día.",
+            "Más de 16 horas al día."});
+            this.utilizacionTxt.Location = new System.Drawing.Point(621, 199);
+            this.utilizacionTxt.Name = "utilizacionTxt";
+            this.utilizacionTxt.Size = new System.Drawing.Size(195, 21);
+            this.utilizacionTxt.TabIndex = 45;
+            this.utilizacionTxt.SelectedIndexChanged += new System.EventHandler(this.comboBox2_SelectedIndexChanged);
+            // 
+            // utiltxt
+            // 
+            this.utiltxt.AutoSize = true;
+            this.utiltxt.Location = new System.Drawing.Point(841, 199);
+            this.utiltxt.Name = "utiltxt";
+            this.utiltxt.Size = new System.Drawing.Size(35, 13);
+            this.utiltxt.TabIndex = 46;
+            this.utiltxt.Text = "label5";
+            // 
             // CintaTransportadora
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Silver;
             this.ClientSize = new System.Drawing.Size(917, 525);
+            this.Controls.Add(this.utiltxt);
+            this.Controls.Add(this.utilizacionTxt);
             this.Controls.Add(this.pesobox);
             this.Controls.Add(this.angureposo);
             this.Controls.Add(this.resultTxt);
@@ -439,7 +465,7 @@
             this.Controls.Add(this.Tamañomin);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.alimentacionBox);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.condicionTxt);
             this.Controls.Add(this.label16);
             this.Controls.Add(this.label15);
             this.Controls.Add(this.IMtxt);
@@ -454,13 +480,12 @@
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.textBox8);
             this.Controls.Add(this.textBox4);
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.capacidadTxt);
             this.Name = "CintaTransportadora";
             this.Text = "CintaTransportadora";
             this.Load += new System.EventHandler(this.CintaTransportadora_Load);
@@ -471,13 +496,12 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox capacidadTxt;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox8;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label6;
@@ -492,7 +516,7 @@
         private System.Windows.Forms.TextBox IMtxt;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox condicionTxt;
         private System.Windows.Forms.ComboBox alimentacionBox;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.ComboBox Tamañomin;
@@ -504,5 +528,7 @@
         private System.Windows.Forms.TextBox resultTxt;
         private System.Windows.Forms.ComboBox angureposo;
         private System.Windows.Forms.ComboBox pesobox;
+        private System.Windows.Forms.ComboBox utilizacionTxt;
+        private System.Windows.Forms.Label utiltxt;
     }
 }

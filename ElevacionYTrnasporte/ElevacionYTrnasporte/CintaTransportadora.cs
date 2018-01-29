@@ -16,10 +16,16 @@ namespace ElevacionYTrnasporte
         public double inclinacionK;
         public double alimentacionK1;
         public Int32 IVT;
+
         public Int32 angulodesobrecara;
         public double pasoida;
         public double pasoretorno = 3.0;
+
         public String pasoVariable = "< 1.2";
+        public int indexTamaño = 0;
+
+        public double factorServicio;
+        public double factorAmbiental;
 
         public CintaTransportadora()
         {
@@ -216,6 +222,8 @@ namespace ElevacionYTrnasporte
                 banda.peso = pasoVariable;
                 banda.retorno = pasoretorno;
                 banda.velocidad = velocidad;
+                banda.capacidad = Convert.ToInt32(capacidadTxt.Text);
+                banda.tamañoMin = indexTamaño;
                 banda.Show();
             }
             catch (Exception) { }
@@ -286,7 +294,24 @@ namespace ElevacionYTrnasporte
 
         private void Tamañomin_SelectedIndexChanged(object sender, EventArgs e)
         {
-
+            if(Tamañomin.SelectedIndex == 0){
+                indexTamaño = 1;
+            }
+            if (Tamañomin.SelectedIndex == 1 || Tamañomin.SelectedIndex == 2) {
+                indexTamaño = 2;
+            } 
+            if (Tamañomin.SelectedIndex == 3)
+            {
+                indexTamaño = 3;
+            }
+            if (Tamañomin.SelectedIndex == 4)
+            {
+                indexTamaño = 4;
+            }
+            if (Tamañomin.SelectedIndex == 5 || Tamañomin.SelectedIndex == 6)
+            {
+                indexTamaño = 5;
+            }
         }
 
         private void alimentacionBox_SelectedIndexChanged(object sender, EventArgs e)
@@ -343,5 +368,48 @@ namespace ElevacionYTrnasporte
                 pasoVariable = "> 2";
             }
         }
+
+        private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if(utilizacionTxt.SelectedIndex == 0){
+                factorServicio = 0.8;
+                utiltxt.Text = factorServicio.ToString();
+            }
+            else if (utilizacionTxt.SelectedIndex == 1) {
+                factorServicio = 1.0;
+                utiltxt.Text = factorServicio.ToString();
+            }
+            else if (utilizacionTxt.SelectedIndex == 2)
+            {
+                factorServicio = 1.1;
+                utiltxt.Text = factorServicio.ToString();
+            }
+            else if (utilizacionTxt.SelectedIndex == 3)
+            {
+                factorServicio = 1.2;
+                utiltxt.Text = factorServicio.ToString();
+            }
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (condicionTxt.SelectedIndex == 0)
+            {
+                factorAmbiental = 0.9;
+                utiltxt.Text = factorAmbiental.ToString();
+            }
+            else if (condicionTxt.SelectedIndex == 1)
+            {
+                factorAmbiental = 1.0;
+                utiltxt.Text = factorAmbiental.ToString();
+            }
+            else if (condicionTxt.SelectedIndex == 2)
+            {
+                factorAmbiental = 1.1;
+                utiltxt.Text = factorAmbiental.ToString();
+            }
+        }
+
+
     }
 }
