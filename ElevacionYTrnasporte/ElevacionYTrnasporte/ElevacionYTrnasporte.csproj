@@ -94,6 +94,36 @@
   <ItemGroup>
     <None Include="Resources\fergacom-transportador-modular-de-banda-de-tapiz-cinta-transportadora-con-cajas-954735-FGR.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cinta.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\salir.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\salirBtn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maximizeBtn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimizer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\process.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\machine-Two.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\machine-three.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\machine-four.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\machine-five.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

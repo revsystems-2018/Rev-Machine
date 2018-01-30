@@ -1,6 +1,6 @@
 ﻿namespace ElevacionYTrnasporte
 {
-    partial class Form1
+    partial class mainForm
     {
         /// <summary>
         /// Variable del diseñador requerida.
@@ -28,91 +28,186 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(mainForm));
+            this.cintaTransportBtn = new System.Windows.Forms.Button();
+            this.machineCuatroBtn = new System.Windows.Forms.Button();
+            this.machineTresBtn = new System.Windows.Forms.Button();
+            this.canjilonesBtn = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
+            this.salirBtn = new System.Windows.Forms.Button();
+            this.button6 = new System.Windows.Forms.Button();
+            this.button7 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // button1
+            // cintaTransportBtn
             // 
-            this.button1.BackColor = System.Drawing.Color.Aquamarine;
-            this.button1.BackgroundImage = global::ElevacionYTrnasporte.Properties.Resources.fergacom_transportador_modular_de_banda_de_tapiz_cinta_transportadora_con_cajas_954735_FGR;
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button1.Cursor = System.Windows.Forms.Cursors.Default;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Location = new System.Drawing.Point(63, 53);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(188, 107);
-            this.button1.TabIndex = 0;
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.cintaTransportBtn.BackColor = System.Drawing.Color.Transparent;
+            this.cintaTransportBtn.BackgroundImage = global::ElevacionYTrnasporte.Properties.Resources.cinta;
+            this.cintaTransportBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.cintaTransportBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.cintaTransportBtn.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.cintaTransportBtn.FlatAppearance.BorderSize = 0;
+            this.cintaTransportBtn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.cintaTransportBtn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.cintaTransportBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cintaTransportBtn.Location = new System.Drawing.Point(54, 43);
+            this.cintaTransportBtn.Name = "cintaTransportBtn";
+            this.cintaTransportBtn.Size = new System.Drawing.Size(120, 120);
+            this.cintaTransportBtn.TabIndex = 0;
+            this.cintaTransportBtn.UseVisualStyleBackColor = false;
+            this.cintaTransportBtn.Click += new System.EventHandler(this.button1_Click);
             // 
-            // button2
+            // machineCuatroBtn
             // 
-            this.button2.Location = new System.Drawing.Point(63, 327);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(200, 71);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "button2";
-            this.button2.UseVisualStyleBackColor = true;
+            this.machineCuatroBtn.BackColor = System.Drawing.Color.Transparent;
+            this.machineCuatroBtn.BackgroundImage = global::ElevacionYTrnasporte.Properties.Resources.machine_four;
+            this.machineCuatroBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.machineCuatroBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.machineCuatroBtn.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.machineCuatroBtn.FlatAppearance.BorderSize = 0;
+            this.machineCuatroBtn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.machineCuatroBtn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.machineCuatroBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.machineCuatroBtn.Location = new System.Drawing.Point(54, 219);
+            this.machineCuatroBtn.Name = "machineCuatroBtn";
+            this.machineCuatroBtn.Size = new System.Drawing.Size(120, 120);
+            this.machineCuatroBtn.TabIndex = 1;
+            this.machineCuatroBtn.UseVisualStyleBackColor = false;
             // 
-            // button3
+            // machineTresBtn
             // 
-            this.button3.Location = new System.Drawing.Point(304, 183);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(176, 79);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "button3";
-            this.button3.UseVisualStyleBackColor = true;
+            this.machineTresBtn.BackColor = System.Drawing.Color.Transparent;
+            this.machineTresBtn.BackgroundImage = global::ElevacionYTrnasporte.Properties.Resources.machine_three;
+            this.machineTresBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.machineTresBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.machineTresBtn.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.machineTresBtn.FlatAppearance.BorderSize = 0;
+            this.machineTresBtn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.machineTresBtn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.machineTresBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.machineTresBtn.Location = new System.Drawing.Point(241, 126);
+            this.machineTresBtn.Name = "machineTresBtn";
+            this.machineTresBtn.Size = new System.Drawing.Size(120, 120);
+            this.machineTresBtn.TabIndex = 2;
+            this.machineTresBtn.UseVisualStyleBackColor = false;
             // 
-            // button4
+            // canjilonesBtn
             // 
-            this.button4.Location = new System.Drawing.Point(545, 53);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(179, 72);
-            this.button4.TabIndex = 3;
-            this.button4.Text = "button4";
-            this.button4.UseVisualStyleBackColor = true;
+            this.canjilonesBtn.BackColor = System.Drawing.Color.Transparent;
+            this.canjilonesBtn.BackgroundImage = global::ElevacionYTrnasporte.Properties.Resources.machine_Two;
+            this.canjilonesBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.canjilonesBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.canjilonesBtn.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.canjilonesBtn.FlatAppearance.BorderSize = 0;
+            this.canjilonesBtn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.canjilonesBtn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.canjilonesBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.canjilonesBtn.Location = new System.Drawing.Point(412, 43);
+            this.canjilonesBtn.Name = "canjilonesBtn";
+            this.canjilonesBtn.Size = new System.Drawing.Size(120, 120);
+            this.canjilonesBtn.TabIndex = 3;
+            this.canjilonesBtn.UseVisualStyleBackColor = false;
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(545, 327);
+            this.button5.BackColor = System.Drawing.Color.Transparent;
+            this.button5.BackgroundImage = global::ElevacionYTrnasporte.Properties.Resources.machine_five;
+            this.button5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.button5.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button5.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.button5.FlatAppearance.BorderSize = 0;
+            this.button5.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.button5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button5.Location = new System.Drawing.Point(412, 219);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(179, 71);
+            this.button5.Size = new System.Drawing.Size(120, 120);
             this.button5.TabIndex = 4;
-            this.button5.Text = "button5";
-            this.button5.UseVisualStyleBackColor = true;
+            this.button5.UseVisualStyleBackColor = false;
             // 
-            // Form1
+            // salirBtn
+            // 
+            this.salirBtn.BackColor = System.Drawing.Color.Transparent;
+            this.salirBtn.BackgroundImage = global::ElevacionYTrnasporte.Properties.Resources.salirBtn;
+            this.salirBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.salirBtn.FlatAppearance.BorderSize = 0;
+            this.salirBtn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.salirBtn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.salirBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.salirBtn.Location = new System.Drawing.Point(564, 4);
+            this.salirBtn.Name = "salirBtn";
+            this.salirBtn.Size = new System.Drawing.Size(20, 20);
+            this.salirBtn.TabIndex = 5;
+            this.salirBtn.UseVisualStyleBackColor = false;
+            this.salirBtn.Click += new System.EventHandler(this.salirBtn_Click);
+            // 
+            // button6
+            // 
+            this.button6.BackColor = System.Drawing.Color.Transparent;
+            this.button6.BackgroundImage = global::ElevacionYTrnasporte.Properties.Resources.minimizer;
+            this.button6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.button6.FlatAppearance.BorderSize = 0;
+            this.button6.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.button6.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button6.Location = new System.Drawing.Point(512, 4);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(20, 20);
+            this.button6.TabIndex = 6;
+            this.button6.UseVisualStyleBackColor = false;
+            // 
+            // button7
+            // 
+            this.button7.BackColor = System.Drawing.Color.Transparent;
+            this.button7.BackgroundImage = global::ElevacionYTrnasporte.Properties.Resources.maximizeBtn;
+            this.button7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.button7.FlatAppearance.BorderSize = 0;
+            this.button7.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.button7.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button7.Location = new System.Drawing.Point(538, 4);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(20, 20);
+            this.button7.TabIndex = 7;
+            this.button7.UseVisualStyleBackColor = false;
+            // 
+            // mainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.BackgroundImage = global::ElevacionYTrnasporte.Properties.Resources.untitled;
-            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.ClientSize = new System.Drawing.Size(761, 431);
+            this.BackColor = System.Drawing.Color.CadetBlue;
+            this.BackgroundImage = global::ElevacionYTrnasporte.Properties.Resources.process;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(589, 362);
+            this.Controls.Add(this.button7);
+            this.Controls.Add(this.button6);
+            this.Controls.Add(this.salirBtn);
             this.Controls.Add(this.button5);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.canjilonesBtn);
+            this.Controls.Add(this.machineTresBtn);
+            this.Controls.Add(this.machineCuatroBtn);
+            this.Controls.Add(this.cintaTransportBtn);
+            this.Font = new System.Drawing.Font("Exotc350 Bd BT", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "Form1";
+            this.Name = "mainForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Elevacion y Transporte";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button cintaTransportBtn;
+        private System.Windows.Forms.Button machineCuatroBtn;
+        private System.Windows.Forms.Button machineTresBtn;
+        private System.Windows.Forms.Button canjilonesBtn;
         private System.Windows.Forms.Button button5;
+        public System.Windows.Forms.Button salirBtn;
+        public System.Windows.Forms.Button button6;
+        public System.Windows.Forms.Button button7;
     }
 }
 
