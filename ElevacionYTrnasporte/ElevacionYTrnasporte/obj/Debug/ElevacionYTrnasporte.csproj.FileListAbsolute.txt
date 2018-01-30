@@ -10,6 +10,7 @@ c:\users\juan\documents\visual studio 2013\Projects\ElevacionYTrnasporte\Elevaci
 C:\Users\Juan\Desktop\Rev-Machine-master\ElevacionYTrnasporte\ElevacionYTrnasporte\bin\Debug\ElevacionYTrnasporte.exe.config
 C:\Users\Juan\Desktop\Rev-Machine-master\ElevacionYTrnasporte\ElevacionYTrnasporte\obj\Debug\ElevacionYTrnasporte.exe
 C:\Users\Juan\Desktop\Rev-Machine-master\ElevacionYTrnasporte\ElevacionYTrnasporte\obj\Debug\ElevacionYTrnasporte.pdb
+<<<<<<< HEAD
 C:\Users\Ricardo Veizaga\Documents\Visual Studio 2013\Projects\Rev-Machine\ElevacionYTrnasporte\ElevacionYTrnasporte\bin\Debug\ElevacionYTrnasporte.exe.config
 C:\Users\Ricardo Veizaga\Documents\Visual Studio 2013\Projects\Rev-Machine\ElevacionYTrnasporte\ElevacionYTrnasporte\obj\Debug\ElevacionYTrnasporte.exe
 C:\Users\Ricardo Veizaga\Documents\Visual Studio 2013\Projects\Rev-Machine\ElevacionYTrnasporte\ElevacionYTrnasporte\obj\Debug\ElevacionYTrnasporte.pdb
@@ -20,3 +21,17 @@ C:\Users\Ricardo Veizaga\Documents\Visual Studio 2013\Projects\Rev-Machine\Eleva
 C:\Users\Ricardo Veizaga\Documents\Visual Studio 2013\Projects\Rev-Machine\ElevacionYTrnasporte\ElevacionYTrnasporte\obj\Debug\ElevacionYTrnasporte.mainForm.resources
 C:\Users\Ricardo Veizaga\Documents\Visual Studio 2013\Projects\Rev-Machine\ElevacionYTrnasporte\ElevacionYTrnasporte\obj\Debug\ElevacionYTrnasporte.Properties.Resources.resources
 C:\Users\Ricardo Veizaga\Documents\Visual Studio 2013\Projects\Rev-Machine\ElevacionYTrnasporte\ElevacionYTrnasporte\obj\Debug\ElevacionYTrnasporte.csproj.GenerateResource.Cache
+=======
+C:\Users\Juan\Documents\Visual Studio 2013\Projects\Rev-Machine\ElevacionYTrnasporte\ElevacionYTrnasporte\bin\Debug\ElevacionYTrnasporte.exe.config
+C:\Users\Juan\Documents\Visual Studio 2013\Projects\Rev-Machine\ElevacionYTrnasporte\ElevacionYTrnasporte\obj\Debug\ElevacionYTrnasporte.exe
+C:\Users\Juan\Documents\Visual Studio 2013\Projects\Rev-Machine\ElevacionYTrnasporte\ElevacionYTrnasporte\obj\Debug\ElevacionYTrnasporte.pdb
+C:\Users\Juan\Documents\Visual Studio 2013\Projects\Rev-Machine\ElevacionYTrnasporte\ElevacionYTrnasporte\bin\Debug\ElevacionYTrnasporte.exe
+C:\Users\Juan\Documents\Visual Studio 2013\Projects\Rev-Machine\ElevacionYTrnasporte\ElevacionYTrnasporte\bin\Debug\ElevacionYTrnasporte.pdb
+C:\Users\Juan\Documents\Visual Studio 2013\Projects\Rev-Machine\ElevacionYTrnasporte\ElevacionYTrnasporte\obj\Debug\ElevacionYTrnasporte.csprojResolveAssemblyReference.cache
+C:\Users\Juan\Documents\Visual Studio 2013\Projects\Rev-Machine\ElevacionYTrnasporte\ElevacionYTrnasporte\obj\Debug\ElevacionYTrnasporte.CintaTransportadora.resources
+C:\Users\Juan\Documents\Visual Studio 2013\Projects\Rev-Machine\ElevacionYTrnasporte\ElevacionYTrnasporte\obj\Debug\ElevacionYTrnasporte.Form1.resources
+C:\Users\Juan\Documents\Visual Studio 2013\Projects\Rev-Machine\ElevacionYTrnasporte\ElevacionYTrnasporte\obj\Debug\ElevacionYTrnasporte.Properties.Resources.resources
+C:\Users\Juan\Documents\Visual Studio 2013\Projects\Rev-Machine\ElevacionYTrnasporte\ElevacionYTrnasporte\obj\Debug\ElevacionYTrnasporte.csproj.GenerateResource.Cache
+C:\Users\Juan\Documents\Visual Studio 2013\Projects\Rev-Machine\ElevacionYTrnasporte\ElevacionYTrnasporte\obj\Debug\ElevacionYTrnasporte.AnchoBanda.resources
+C:\Users\Juan\Documents\Visual Studio 2013\Projects\Rev-Machine\ElevacionYTrnasporte\ElevacionYTrnasporte\obj\Debug\ElevacionYTrnasporte.ResultadoCintaTransportadora.resources
+>>>>>>> d83393885cec7fe411916490bac57fbb50394964
