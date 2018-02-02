@@ -27,6 +27,15 @@ namespace ElevacionYTrnasporte
         public int tamañoMin = 1;
         public double factorChoque;
 
+        public double factorServicio;
+        public double factorAmbiental;
+        public double factorParticipacion;
+
+        public double cargaDinamica;
+        public double cargaRodillo;
+        public double rodilloRetorno;
+        public double cargaDinamicaRetorno;
+
         public AnchoBanda()
         {
             InitializeComponent();
@@ -35,6 +44,10 @@ namespace ElevacionYTrnasporte
         private void enviarbtn_Click(object sender, EventArgs e)
         {
             pasoTxt.Text = paso.ToString() + " " + retorno.ToString();
+            cargaDinamica = getCargaDinamica();
+            cargaRodillo = getCargaRodillo();
+            rodilloRetorno = getRodilloRetorno();
+            cargaDinamicaRetorno = getCargaDinamicaRetorno(rodilloRetorno);
         }
 
         private void AnchoBanda_Load(object sender, EventArgs e)
@@ -202,12 +215,253 @@ namespace ElevacionYTrnasporte
             return res;
         }
 
+        private double getFactorVelocidad(double velocity, double diametre) {
+            double res = 0;
+            if(diametre == 60){
+                if(velocity == 0.5){
+                    res = 0.81;
+                }
+                if (velocity == 1.0)
+                {
+                    res = 0.92;
+                }
+                if (velocity == 1.5)
+                {
+                    res = 0.99;
+                }
+                if (velocity >= 2.0)
+                {
+                    res = 1.05;
+                }
+            }
+            if (diametre == 76)
+            {
+                if (velocity == 0.5)
+                {
+                    res = 0.80;
+                }
+                if (velocity == 1.0)
+                {
+                    res = 0.87;
+                }
+                if (velocity == 1.5)
+                {
+                    res = 0.99;
+                }
+                if (velocity >= 2.0)
+                {
+                    res = 1.0;
+                }
+            }
+            if (diametre == 89 || diametre == 90)
+            {
+                if (velocity == 0.5)
+                {
+                    res = 0.80;
+                }
+                if (velocity == 1.0)
+                {
+                    res = 0.85;
+                }
+                if (velocity == 1.5)
+                {
+                    res = 0.92;
+                }
+                if (velocity == 2.0)
+                {
+                    res = 0.96;
+                }
+                if (velocity == 2.5)
+                {
+                    res = 1.01;
+                }
+                if (velocity >= 3.0)
+                {
+                    res = 1.05;
+                }
+            }
+            if (diametre == 102)
+            {
+                if (velocity == 0.5)
+                {
+                    res = 0.80;
+                }
+                if (velocity == 1.0)
+                {
+                    res = 0.83;
+                }
+                if (velocity == 1.5)
+                {
+                    res = 0.89;
+                }
+                if (velocity == 2.0)
+                {
+                    res = 0.95;
+                }
+                if (velocity == 2.5)
+                {
+                    res = 0.98;
+                }
+                if (velocity >= 3.0)
+                {
+                    res = 1.03;
+                }
+            }
+            if (diametre >= 108 || diametre <= 110)
+            {
+                if (velocity == 0.5)
+                {
+                    res = 0.80;
+                }
+                if (velocity == 1.0)
+                {
+                    res = 0.82;
+                }
+                if (velocity == 1.5)
+                {
+                    res = 0.88;
+                }
+                if (velocity == 2.0)
+                {
+                    res = 0.94;
+                }
+                if (velocity == 2.5)
+                {
+                    res = 0.97;
+                }
+                if (velocity == 3.0)
+                {
+                    res = 1.01;
+                }
+                if (velocity == 3.5)
+                {
+                    res = 1.04;
+                }
+                if (velocity == 4)
+                {
+                    res = 1.07;
+                }
+                if (velocity == 4.5)
+                {
+                    res = 1.14;
+                }
+                if (velocity == 5)
+                {
+                    res = 1.17;
+                }
+            }
+            if (diametre >= 133 || diametre <= 140)
+            {
+                if (velocity == 0.5)
+                {
+                    res = 0.80;
+                }
+                if (velocity == 1.0)
+                {
+                    res = 0.80;
+                }
+                if (velocity == 1.5)
+                {
+                    res = 0.85;
+                }
+                if (velocity == 2.0)
+                {
+                    res = 0.90;
+                }
+                if (velocity == 2.5)
+                {
+                    res = 0.93;
+                }
+                if (velocity == 3.0)
+                {
+                    res = 0.96;
+                }
+                if (velocity == 3.5)
+                {
+                    res = 1.0;
+                }
+                if (velocity == 4)
+                {
+                    res = 1.03;
+                }
+                if (velocity == 4.5)
+                {
+                    res = 1.05;
+                }
+                if (velocity == 5)
+                {
+                    res = 1.08;
+                }
+            }
+            if (diametre == 159)
+            {
+                if (velocity == 0.5)
+                {
+                    res = 0.80;
+                }
+                if (velocity == 1.0)
+                {
+                    res = 0.80;
+                }
+                if (velocity == 1.5)
+                {
+                    res = 0.82;
+                }
+                if (velocity == 2.0)
+                {
+                    res = 0.86;
+                }
+                if (velocity == 2.5)
+                {
+                    res = 0.91;
+                }
+                if (velocity == 3.0)
+                {
+                    res = 0.92;
+                }
+                if (velocity == 3.5)
+                {
+                    res = 0.96;
+                }
+                if (velocity == 4)
+                {
+                    res = 0.99;
+                }
+                if (velocity == 4.5)
+                {
+                    res = 1.02;
+                }
+                if (velocity == 5)
+                {
+                    res = 1.0;
+                }
+            }
+            return res;
+        }
+
+        private double getCargaDinamicaRetorno(double rodilloRetorno) {
+            return rodilloRetorno * factorServicio * factorAmbiental * getFactorVelocidad(velocidad, diametro);
+        }
+
+        private double getRodilloRetorno() {
+            return retorno * Qb * 0.981;
+        }
+
         private double getCargaEstatica(double Ao) {
             double res = 0;
             double abajo = 3.6 * velocidad;
             double dividir = ((capacidad / abajo) + Qb);
             res = (Ao * (dividir * 0.981));
             return res;
+        }
+
+        private double getCargaDinamica() {
+            cargaDinamica = cargaStatic * factorAmbiental * factorServicio * factorChoque;
+            return cargaDinamica;
+        }
+
+        private double getCargaRodillo() {
+            return cargaDinamica * factorParticipacion;
         }
 
         public int getDiametro(double ancho, double velocidad) {

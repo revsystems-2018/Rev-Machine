@@ -23,9 +23,13 @@ namespace ElevacionYTrnasporte
 
         public String pasoVariable = "< 1.2";
         public int indexTamaño = 0;
+        public int indexParticipacion;
 
         public double factorServicio;
         public double factorAmbiental;
+        public double factorParticipacion;
+
+        public double coeficienteResistencia;
 
         public CintaTransportadora()
         {
@@ -224,6 +228,9 @@ namespace ElevacionYTrnasporte
                 banda.velocidad = velocidad;
                 banda.capacidad = Convert.ToInt32(capacidadTxt.Text);
                 banda.tamañoMin = indexTamaño;
+                banda.factorAmbiental = factorAmbiental;
+                banda.factorServicio = factorServicio;
+                banda.factorParticipacion = factorParticipacion;
                 banda.Show();
             }
             catch (Exception) { }
@@ -296,21 +303,35 @@ namespace ElevacionYTrnasporte
         {
             if(Tamañomin.SelectedIndex == 0){
                 indexTamaño = 1;
+                Tamañomax.SelectedIndex = 0;
             }
-            if (Tamañomin.SelectedIndex == 1 || Tamañomin.SelectedIndex == 2) {
+            if (Tamañomin.SelectedIndex == 1) {
                 indexTamaño = 2;
-            } 
+                Tamañomax.SelectedIndex = 1;
+            }
+            if (Tamañomin.SelectedIndex == 2) {
+                indexTamaño = 2;
+                Tamañomax.SelectedIndex = 2;
+            }
             if (Tamañomin.SelectedIndex == 3)
             {
                 indexTamaño = 3;
+                Tamañomax.SelectedIndex = 3;
             }
             if (Tamañomin.SelectedIndex == 4)
             {
                 indexTamaño = 4;
+                Tamañomax.SelectedIndex = 4;
             }
-            if (Tamañomin.SelectedIndex == 5 || Tamañomin.SelectedIndex == 6)
+            if (Tamañomin.SelectedIndex == 5)
             {
                 indexTamaño = 5;
+                Tamañomax.SelectedIndex = 5;
+            }
+            if (Tamañomin.SelectedIndex == 6)
+            {
+                indexTamaño = 5;
+                Tamañomax.SelectedIndex = 6;
             }
         }
 
@@ -334,23 +355,33 @@ namespace ElevacionYTrnasporte
             if (angureposo.SelectedItem == "0 - 19")
             {
                 angulodesobrecara = 5;
+                indexParticipacion = 1;
+                factorParticipacion = 1;
             }
             if (angureposo.SelectedItem == "20 - 29")
             {
                 angulodesobrecara = 10;
+                indexParticipacion = 2;
+                factorParticipacion = 0.55;
             }
             if (angureposo.SelectedItem == "30 - 34")
             {
                 angulodesobrecara = 20;
+                indexParticipacion = 3;
+                factorParticipacion = 0.67;
 
             }
             if (angureposo.SelectedItem == "35 - 39")
             {
                 angulodesobrecara = 25;
+                indexParticipacion = 4;
+                factorParticipacion = 0.72;
             }
             if (angureposo.SelectedItem == "> 40")
             {
                 angulodesobrecara = 30;
+                indexParticipacion = 4;
+                factorParticipacion = 0.40;
             }
 
         }
@@ -408,6 +439,75 @@ namespace ElevacionYTrnasporte
                 factorAmbiental = 1.1;
                 utiltxt.Text = factorAmbiental.ToString();
             }
+        }
+
+        private void textBox4_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void distanciaEjesBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (distanciaEjesBox.SelectedIndex == 0) {
+                coeficienteResistencia = 4.5;
+            }
+            if (distanciaEjesBox.SelectedIndex == 1)
+            {
+                coeficienteResistencia = 3.2;
+            }
+            if (distanciaEjesBox.SelectedIndex == 2)
+            {
+                coeficienteResistencia = 2.6;
+            }
+            if (distanciaEjesBox.SelectedIndex == 3)
+            {
+                coeficienteResistencia = 2.2;
+            }
+            if (distanciaEjesBox.SelectedIndex == 4)
+            {
+                coeficienteResistencia = 2.1;
+            }
+            if (distanciaEjesBox.SelectedIndex == 5)
+            {
+                coeficienteResistencia = 2.0;
+            }
+            if (distanciaEjesBox.SelectedIndex == 6)
+            {
+                coeficienteResistencia = 1.8;
+            }
+            if (distanciaEjesBox.SelectedIndex == 7)
+            {
+                coeficienteResistencia = 1.7;
+            }
+            if (distanciaEjesBox.SelectedIndex == 8)
+            {
+                coeficienteResistencia = 1.5;
+            }
+            if (distanciaEjesBox.SelectedIndex == 9)
+            {
+                coeficienteResistencia = 1.4;
+            }
+            if (distanciaEjesBox.SelectedIndex == 10)
+            {
+                coeficienteResistencia = 1.3;
+            }
+            if (distanciaEjesBox.SelectedIndex == 11)
+            {
+                coeficienteResistencia = 1.2;
+            }
+            if (distanciaEjesBox.SelectedIndex == 12)
+            {
+                coeficienteResistencia = 1.1;
+            }
+            if (distanciaEjesBox.SelectedIndex == 13)
+            {
+                coeficienteResistencia = 1.05;
+            }
+            if (distanciaEjesBox.SelectedIndex == 14)
+            {
+                coeficienteResistencia = 1.03;
+            }
+            //ultimo paso.
         }
 
 

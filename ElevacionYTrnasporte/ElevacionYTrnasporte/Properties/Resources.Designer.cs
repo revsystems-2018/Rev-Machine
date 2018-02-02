@@ -124,6 +124,16 @@ namespace ElevacionYTrnasporte.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap maximize2Btn {
+            get {
+                object obj = ResourceManager.GetObject("maximize2Btn", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap maximizeBtn {
             get {
                 object obj = ResourceManager.GetObject("maximizeBtn", resourceCulture);

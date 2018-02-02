@@ -118,11 +118,8 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="machine-four" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\machine-four.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="minimizer" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\minimizer.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="maximizeBtn" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\maximizeBtn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="process" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\process.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -130,8 +127,14 @@
   <data name="salirBtn" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\salirBtn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="machine-five" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\machine-five.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="fergacom-transportador-modular-de-banda-de-tapiz-cinta-transportadora-con-cajas-954735-FGR" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\fergacom-transportador-modular-de-banda-de-tapiz-cinta-transportadora-con-cajas-954735-FGR.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="machine-Two" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\machine-Two.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="untitled" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\untitled.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -139,11 +142,11 @@
   <data name="cinta" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\cinta.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="machine-Two" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\machine-Two.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="machine-four" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\machine-four.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="maximizeBtn" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\maximizeBtn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="minimizer" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\minimizer.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="machine-three" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\machine-three.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -151,7 +154,7 @@
   <data name="salir" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\salir.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="machine-five" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\machine-five.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="maximize2Btn" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\maximize2Btn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

@@ -32,5 +32,24 @@ namespace ElevacionYTrnasporte
         {
             Application.Exit();
         }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Maximized;
+            button7.Visible = false;
+            button1.Visible = true;
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Normal;
+            button1.Visible = false;
+            button7.Visible = true;
+        }
     }
 }

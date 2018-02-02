@@ -35,3 +35,5 @@ C:\Users\Juan\Documents\Visual Studio 2013\Projects\Rev-Machine\ElevacionYTrnasp
 C:\Users\Juan\Documents\Visual Studio 2013\Projects\Rev-Machine\ElevacionYTrnasporte\ElevacionYTrnasporte\obj\Debug\ElevacionYTrnasporte.AnchoBanda.resources
 C:\Users\Juan\Documents\Visual Studio 2013\Projects\Rev-Machine\ElevacionYTrnasporte\ElevacionYTrnasporte\obj\Debug\ElevacionYTrnasporte.ResultadoCintaTransportadora.resources
 >>>>>>> d83393885cec7fe411916490bac57fbb50394964
+C:\Users\Ricardo Veizaga\Documents\Visual Studio 2013\Projects\Rev-Machine\ElevacionYTrnasporte\ElevacionYTrnasporte\obj\Debug\ElevacionYTrnasporte.AnchoBanda.resources
+C:\Users\Ricardo Veizaga\Documents\Visual Studio 2013\Projects\Rev-Machine\ElevacionYTrnasporte\ElevacionYTrnasporte\obj\Debug\ElevacionYTrnasporte.ResultadoCintaTransportadora.resources
